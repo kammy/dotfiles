@@ -1,0 +1,37 @@
+[user]
+	name = Kammy
+	email = shuichi.kura@gmail.com
+[push]
+	default = current
+[alias]
+	alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/'
+	b  = branch
+	ba = branch -a
+	s  = status --short --branch -uno
+	st = status -uno --ignore-submodules
+	co = checkout
+	ci = commit -v
+	df = diff --word-diff --ignore-space-change --ignore-space-at-eol
+	dc = diff --cached --word-diff --ignore-space-change --ignore-space-at-eol
+	up = pull --rebase
+	f  = fetch --prune
+	fa = fetch --prune --all
+	stat = log --stat --pretty=format:'%Cblue%h %Cgreen%ci %Cred%cn %Creset%s %Cred%d'
+	ls = log --graph --date-order --all --color --pretty=format:'%Cblue%h %Cgreen%ci %Cred%cn %Cblue%m %Creset%s %Cred%d'
+[color]
+	ui = true
+[core]
+	excludesfile = ~/.gitignore
+	pager = nkf -w | LESSCHARSET=utf-8 less -F -X -x4 -R
+[i18n]
+	commitencoding=UTF-8
+	logoutputencoding=UTF-8
+
+[http]
+	sslVerify = false
+[tig "bind"]
+	generic = g move-first-line
+	generic = G move-last-line
+
+# vim:tw=78:ts=2:ft=gitconfig:norl:noet:fen:fdl=0:fdm=marker:
+# EOF

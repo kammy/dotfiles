@@ -1,0 +1,19 @@
+*~
+*.bak
+*.sw[op]
+*.pyc
+tags
+tmp
+GPATH
+GRTAGS
+GTAGS
+.DS_Store
+
+# dotfiles
+/.*
+
+# osx thumbnails
+._*
+
+# vim:tw=78:ts=2:ft=gitignore:norl:noet:fen:fdl=0:fdm=marker:
+# EOF
